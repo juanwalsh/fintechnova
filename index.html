@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FintechNova | Soluções Financeiras do Futuro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: '#4C6FFF', // Azul futurista
+              secondary: '#1A1F36', // Azul escuro quase preto
+              highlight: '#8AA2FF', // Lavanda suave
+              support: '#E2E8F0', // Cinza claro
+              background: '#F8FAFF', // Quase branco
+              darkBg: '#0f172a', // Fundo modo escuro
+              darkSurface: '#1e293b', // Superfície modo escuro
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              heading: ['Poppins', 'sans-serif'],
+            },
+            boxShadow: {
+              'glass': '0 8px 32px 0 rgba(31, 38, 135, 0.07)',
+              'card': '0 10px 30px -5px rgba(0, 0, 0, 0.05)',
+              'glow': '0 0 15px rgba(76, 111, 255, 0.3)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      :root {
+        --input-bg: #1A1F36;
+        --input-text: #FFFFFF;
+        --input-border: rgba(255, 255, 255, 0.1);
+        --input-focus: #4C6FFF;
+      }
+
+      body {
+        background-color: #F8FAFF;
+        font-family: 'Inter', sans-serif;
+        color: #1A1F36;
+        overflow-x: hidden;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+      body.dark {
+        background-color: #0f172a;
+        color: #f1f5f9;
+      }
+
+      /* Global Input Styles as requested */
+      .fintech-input {
+        background-color: var(--input-bg) !important;
+        color: var(--input-text) !important;
+        border: 1px solid var(--input-border) !important;
+        transition: all 0.3s ease;
+      }
+      
+      .fintech-input::placeholder {
+        color: rgba(255, 255, 255, 0.5) !important;
+      }
+
+      .fintech-input:focus {
+        border-color: var(--input-focus) !important;
+        box-shadow: 0 0 0 2px rgba(76, 111, 255, 0.2) !important;
+        outline: none;
+      }
+
+      /* Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #cbd5e1;
+        border-radius: 4px;
+      }
+      body.dark ::-webkit-scrollbar-thumb {
+        background: #334155;
+      }
+
+      .glass-morphism {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+      }
+      body.dark .glass-morphism {
+        background: rgba(15, 23, 42, 0.7);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .gradient-text {
+        background: linear-gradient(135deg, #4C6FFF 0%, #8AA2FF 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.1",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.6",
+    "lucide": "https://aistudiocdn.com/lucide@^0.555.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
